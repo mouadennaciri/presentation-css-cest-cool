@@ -1,0 +1,28 @@
+#section1 div {
+margin-top: 15%;
+font-size: 1.1em
+}
+
+#section1 div p:nth-child(1) {
+  color: #e8486a;
+}
+
+#section1 div p:nth-child(1) span {
+  color: #eee;
+  margin-left: 10%;
+}
+
+#section1 div p:nth-child(2) {
+  color: #2bb2d3;
+}
+
+
+/* SECTION 2 */
+
+#section2 {
+  top: 100px !important;
+}
+
+#section2 h3 {
+  color: #e8486a;
+}

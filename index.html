@@ -102,6 +102,180 @@
       <!-- SECTION 10 -->
       <section id="section10">
         <h3 class="title-color">Les transitions</h3>
+        <ul>
+          <li>transition-property</li>
+          <li>transition-duration</li>
+          <li>transition-timing-function</li>
+          <li>transition-delay</li>
+          <li>cubic-bezier</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 11 -->
+      <section id="section11">
+        <div class="squar-to-circle">Du carré au cercle</div>
+        <pre class="css custom-box-shadow">
+          <code>
+            /* transition-property: border-radius;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(.32,.11,.27,.99);
+            transition-delay: 100ms; */
+            transition: border-radius 1s cubic-bezier(0.47, 0, 0.55, 0.99) 100ms;
+          </code>
+        </pre>
+      </section>
+
+      <!-- SECTION 12 -->
+      <section id="section12">
+        <h3 class="title-color">Les courbes de Bézier</h3>
+        <img src="assets/cubic-bezier.png" alt="Les courbes de Bézier" height="350" width="350">
+        <p>Une courbe de Bézier cubique se définit avec 4 points : P0, P1, P2, et P3</p>
+        <p>État initial P0 (0, 0)</p>
+        <p>État final P1 (1, 1)</p>
+      </section>
+
+      <!-- SECTION 13 -->
+      <section id="section13">
+        <h3 class="title-color">Les performances CSS</h3>
+        <ul>
+          <li>DOM et CSSOM</li>
+          <li>Imbrication des sélecteurs et profondeur</li>
+          <li>Propriété raccourcie</li>
+        </ul>
+        <img src="https://media.giphy.com/media/lRnUWhmllPI9a/giphy.gif" alt="Flash">
+      </section>
+
+      <!-- SECTION 14 -->
+      <section id="section14">
+        <h3 class="title-color">DOM</h3>
+        <img src="https://media.giphy.com/media/UJgzsp2IjxUuQ/giphy.gif" alt="DOOM">
+      </section>
+
+      <!-- SECTION 15 -->
+      <section id="section15">
+        <pre class="html custom-box-shadow">
+          <code>
+            <htlm!>
+              <body!>
+                <p>Bruce <span>Wayne</span> est Batman</p>
+                <div><img src="batman.jpg"></div>
+              </body!>
+            </html!>
+          </code>
+        </pre>
+        <img src="assets/dom-tree.png" alt="DOM tree">
+      </section>
+
+      <!-- SECTION 16 -->
+      <section id="section16">
+        <h3 class="title-color">CSSOM</h3>
+        <pre class="css custom-box-shadow">
+          <code>
+            body { font-size: 16px }
+            p { font-weight: bold }
+            span { color: red }
+            p span { display: none }
+            img { float: right }
+          </code>
+        </pre>
+        <img src="assets/cssom-tree.png" alt="CSSOM tree">
+      </section>
+
+      <!-- SECTION 17 -->
+      <section id="section17">
+        <h3 class="title-color">Imbrication des sélecteurs et profondeur</h3>
+        <img src="assets/nested-css-properties.png" alt="Nested CSS properties">
+      </section>
+
+      <!-- SECTION 18 -->
+      <section id="section18">
+        <pre class="css custom-box-shadow">
+          <code>
+            .iad-cb-create-event {
+              background-color: $iad-grey-200;
+              .iad-cb-create-event-public-type {
+                border: 2px solid $iad-grey-700;
+                .iad-cb-create-event-public-type-title {
+                  color: $iad-blue-500;
+                }
+              }
+            }
+          </code>
+        </pre>
+        <pre class="css custom-box-shadow">
+          <code>
+            .iad-cb-create-event {
+              background-color: #edeef2;
+            }
+            .iad-cb-create-event .iad-cb-create-event-public-type {
+              border: 2px solid #63697a;
+            }
+            .iad-cb-create-event .iad-cb-create-event-public-type
+              .iad-cb-create-event-public-type-title {
+              color: #5eadd5;
+            }
+          </code>
+        </pre>
+      </section>
+
+      <!-- SECTION 19 -->
+      <section id="section19">
+        <h3 class="title-color">@at-root</h3>
+        <pre class="css custom-box-shadow">
+          <code>
+            .iad-cb-create-event {
+              background-color: $iad-grey-200;
+              .iad-cb-create-event-public-type {
+                border: 2px solid $iad-grey-700;
+                @at-root {
+                  .iad-cb-create-event-public-type-title {
+                    color: $iad-blue-500;
+                  }
+                }
+              }
+            }
+          </code>
+        </pre>
+        <pre class="css custom-box-shadow">
+          <code>
+            .iad-cb-create-event {
+              background-color: #edeef2;
+            }
+            .iad-cb-create-event .iad-cb-create-event-public-type {
+              border: 2px solid #63697a;
+            }
+            .iad-cb-create-event-public-type-title {
+              color: #5eadd5;
+            }
+          </code>
+        </pre>
+      </section>
+
+      <!-- SECTION 20 -->
+      <section id="section20">
+        <h3 class="title-color">Propriété raccourcie</h3>
+        <pre class="css custom-box-shadow">
+          <code>
+            background: tomato;
+            /* background-image: initial;
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            background-repeat-x: initial;
+            background-repeat-y: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: tomato; */
+          </code>
+        </pre>
+        <p>Je ne veux pas d'image de fond qui défile, positionné à gauche et en haut...
+          avec une couleur de fond « tomato »</p>
+      </section>
+
+      <!-- SECTION 130 -->
+      <section id="section130">
+        <h3 class="title-color">CSS Houdini</h3>
       </section>
     </div>
   </div>

@@ -1,3 +1,8 @@
+.title-color {
+  color: #e8486a !important;
+}
+
+/* SECTION 1 */
 #section1 div {
 margin-top: 15%;
 font-size: 1.1em
@@ -16,13 +21,12 @@ font-size: 1.1em
   color: #2bb2d3;
 }
 
-
 /* SECTION 2 */
-
 #section2 {
   top: 100px !important;
 }
 
-#section2 h3 {
-  color: #e8486a;
+/* SECTION  */
+#section3 {
+  top: 0 !important;
 }

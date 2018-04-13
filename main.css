@@ -56,13 +56,14 @@ font-size: 1.1em
 }
 
 #section11 .squar-to-circle {
+  display: flex;
+  align-items: center;
   margin: auto;
   width: 350px;
   height: 350px;
   background-color: indianred;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 900;
-  line-height: 350px;
   /* transition-property: border-radius;
   transition-delay: 100ms;
   transition-duration: 1s;

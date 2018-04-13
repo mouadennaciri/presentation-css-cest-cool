@@ -273,9 +273,62 @@
           avec une couleur de fond « tomato »</p>
       </section>
 
-      <!-- SECTION 130 -->
-      <section id="section130">
+      <!-- SECTION 21 -->
+      <section id="section21">
         <h3 class="title-color">CSS Houdini</h3>
+        <ul>
+          <li>CSS Variables (Custom Properties)</li>
+          <li>CSS Color Module</li>
+        </ul>
+        <img src="assets/houdini.jpg"
+             alt="Houdini"
+             width="500"
+             height="450">
+      </section>
+
+      <!-- SECTION 22 -->
+      <section id="section22">
+        <h3 class="title-color">CSS Variables</h3>
+        <div></div>
+        <pre class="css custom-box-shadow">
+          <code>
+            :root {
+              --main-background-color: plum;
+            }
+            div {
+              background-color: var(--main-background-color);
+            }
+            div:hover {
+              --main-background-color: chocolate;
+            }
+          </code>
+        </pre>
+      </section>
+
+      <!-- SECTION 23 -->
+      <section id="section23">
+        <h3 class="title-color">CSS Color Module</h3>
+        <pre class="css custom-box-shadow">
+          <code>
+            background-color: color(orange alpha(68%) saturation(49%) lightness(30%) red(173) blackness(0%))
+          </code>
+        </pre>
+        <img src="https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif" alt="Magic">
+      </section>
+
+      <!-- SECTION 24 -->
+      <section id="section24">
+        <h3 class="title-color">Endgame</h3>
+        <ul>
+          <li>Flexbox</li>
+          <li>Les animations CSS</li>
+          <li>Les performances CSS</li>
+          <li>CSS Houdini</li>
+        </ul>
+        <img src="https://media.giphy.com/media/7mxD8M9juTC9O/giphy.gif"
+             alt="Unicorn"
+             width="400"
+             height="350">
       </section>
     </div>
   </div>

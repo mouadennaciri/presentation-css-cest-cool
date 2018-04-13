@@ -1,3 +1,7 @@
+:root {
+  --main-background-color: plum;
+}
+
 .title-color {
   color: #e8486a !important;
 }
@@ -118,4 +122,36 @@ font-size: 1.1em
 /* SECTION 20 */
 #section20 p {
   margin-top: -60px !important;
+}
+
+/* SECTION 22 */
+#section22 div {
+  margin-top: -10px !important;
+  width: 380px;
+  height: 280px;
+  margin: auto;
+  background-color: var(--main-background-color);
+}
+
+#section22 div:hover {
+  --main-background-color: chocolate;
+}
+
+#section22 pre {
+  top: -30px !important;
+}
+
+/* SECTION 24 */
+#section24 {
+  top: 0 !important;
+}
+
+#section24 ul li {
+  text-decoration: line-through;
+}
+
+#section24 img {
+  display: block;
+  /* margin-top: 50px; */
+  margin: 10px auto 0;
 }
